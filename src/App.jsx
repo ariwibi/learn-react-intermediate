@@ -10,6 +10,7 @@ import CompanySearchPage from "./components/QueryParams";
 import LocalContext from "./components/ReactContext";
 import { useState } from "react";
 import MyContext from "./components/MyContext";
+import UseSate from "./components/UseState";
 function App() {
   // function btnAlertHandler() {
   //   alert("hello typeProps");
@@ -74,13 +75,15 @@ function App() {
   // return <RouterProvider router={router} />;
 
   // return <CompanySearchPage />;
-  const [local, setLocal] = useState("id");
-  // setLocal(local === "id" ? "en" : "id");
-  return (
-    <LocalContext.Provider value={{ local, setLocal }}>
-      <MyContext />
-    </LocalContext.Provider>
-  );
+  // const [local, setLocal] = useState("id");
+  // // setLocal(local === "id" ? "en" : "id");
+  // return (
+  //   <LocalContext.Provider value={{ local, setLocal }}>
+  //     <MyContext />
+  //   </LocalContext.Provider>
+  // );
+
+  return <UseSate />;
 }
 
 export default App;
