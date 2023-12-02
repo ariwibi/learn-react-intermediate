@@ -11,6 +11,7 @@ import LocalContext from "./components/ReactContext";
 import { useState } from "react";
 import MyContext from "./components/MyContext";
 import UseSate from "./components/UseState";
+import UseEffect from "./components/UseEffect";
 function App() {
   // function btnAlertHandler() {
   //   alert("hello typeProps");
@@ -83,7 +84,9 @@ function App() {
   //   </LocalContext.Provider>
   // );
 
-  return <UseSate />;
+  // return <UseSate />;
+
+  return <UseEffect />;
 }
 
 export default App;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function UseSate() {
   function getExpensiveCount() {
@@ -6,8 +6,15 @@ export default function UseSate() {
   }
   const [count, setCount] = useState(() => getExpensiveCount());
 
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
+  useEffect(() => {
+    console.count("in useEffect");
+    document.title = `you have clicked ${count}`;
+  });
+
+  const increment = () => setCount((prevCount) => prevCount + 1);
+  const decrement = () => setCount((prevCount) => prevCount - 1);
+
+  console.count("rendering");
 
   return (
     <>
