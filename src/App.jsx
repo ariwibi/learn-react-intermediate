@@ -12,6 +12,7 @@ import { useState } from "react";
 import MyContext from "./components/MyContext";
 import UseSate from "./components/UseState";
 import UseEffect from "./components/UseEffect";
+import RegisterForm from "./components/CustomHooks";
 function App() {
   // function btnAlertHandler() {
   //   alert("hello typeProps");
@@ -86,7 +87,8 @@ function App() {
 
   // return <UseSate />;
 
-  return <UseEffect />;
+  // return <UseEffect />;
+  return <RegisterForm />;
 }
 
 export default App;
